@@ -1,0 +1,32 @@
+{
+  "name": "node-oncourse",
+  "version": "0.0.0",
+  "description": "node version of ruby-oncourse, creates an api for oncoursesystems.com",
+  "main": "./lib/oncourse",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevecd/node-oncourse.git"
+  },
+  "keywords": [
+    "oncourse",
+    "oncoursesystems.com"
+  ],
+  "author": "stevecd <stevecd123@gmail.com> (http://www.github.com/stevecd)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/stevecd/node-oncourse/blob/master/LICENSE.txt"
+  },
+  "bugs": {
+    "url": "https://github.com/stevecd/node-oncourse/issues"
+  },
+  "homepage": "https://github.com/stevecd/node-oncourse",
+  "dependencies": {
+    "request": "~2.34.0",
+    "cheerio": "~0.13.1",
+    "q": "~1.0.1",
+    "moment": "~2.5.1"
+  }
+}
