@@ -1,7 +1,7 @@
 # node-oncourse
 
-This is a port of my ruby gem, [oncourse]("https://github.com/stevecd/ruby-oncourse")
-over to node.  Its purpose is to provide an API for automating managing teacher lessonplans
+This is a port of a ruby gem I made, [oncourse]("https://github.com/stevecd/ruby-oncourse"),
+over to node.  Its purpose is to provide an API for managing teacher lessonplans
 on oncoursesystems.com.
 
 
