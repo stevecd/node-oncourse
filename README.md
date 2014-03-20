@@ -10,7 +10,7 @@ This is a port of a ruby gem I made called [oncourse]("https://github.com/stevec
 ## Usage
 
     var Client =  require("node-oncourse").Client;
-    var fs = requrie("fs");
+    var fs = require("fs");
     
     // build a client
     var client = new Client("username", "password");
