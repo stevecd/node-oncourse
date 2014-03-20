@@ -35,8 +35,8 @@ This is a port of a ruby gem I made called [oncourse]("https://github.com/stevec
       return client.getPlannerHomework();
     }).then(function() {
       // weekly lessons are stored in client.weeks as they're read and updated.
-      // by this point we've logged, parsed 2 weeks and then filled in standards and homework
-      // for each lesson in those 2 weeks.
+      // by this point we've logged in, parsed 2 weeks, and then filled in standards and homework
+      // for each lesson in those weeks.
 
       // save it to a file for now.
       fs.writeFileSync("./lessonplan.json", JSON.stringify(client.weeks, null, 2));
