@@ -1,8 +1,6 @@
 # node-oncourse
 
-This is a port of my ruby gem, [oncourse]("https://github.com/stevecd/ruby-oncourse")
-over to node.  Its purpose is to provide an API for automating managing teacher lessonplans
-on oncoursesystems.com.
+This is a port of a ruby gem I made called [oncourse]("https://github.com/stevecd/ruby-oncourse").  Its purpose is to provide an API for managing teacher lesson plans on oncoursesystems.com.
 
 
 ## Installation
@@ -12,7 +10,7 @@ on oncoursesystems.com.
 ## Usage
 
     var Client =  require("node-oncourse").Client;
-    var fs = requrie("fs");
+    var fs = require("fs");
     
     // build a client
     var client = new Client("username", "password");
@@ -37,8 +35,8 @@ on oncoursesystems.com.
       return client.getPlannerHomework();
     }).then(function() {
       // weekly lessons are stored in client.weeks as they're read and updated.
-      // by this point we've logged, parsed 2 weeks and then filled in standards and homework
-      // for each lesson in those 2 weeks.
+      // by this point we've logged in, parsed 2 weeks, and then filled in standards and homework
+      // for each lesson in those weeks.
 
       // save it to a file for now.
       fs.writeFileSync("./lessonplan.json", JSON.stringify(client.weeks, null, 2));
